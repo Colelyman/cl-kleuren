@@ -1,0 +1,4 @@
+../tests/data/small/1.fasta
+../tests/data/small/2.fasta
+../tests/data/small/3.fasta
+../tests/data/small/4.fasta
