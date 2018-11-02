@@ -13,7 +13,7 @@
 (defparameter *colors*
   ())
 
-(plan 6)
+(plan 8)
 
 ;; check accessor functions
 (is (k *cdbg-test*) *k*)
@@ -25,6 +25,9 @@
 (is (get-node-colors *cdbg-test* "CACAT") '(1 0 0 0))
 (is (get-node-colors *cdbg-test* "CACTT") '(0 1 0 1))
 (is (get-node-colors *cdbg-test* "ACACA") '(2 1 1 1))
+
+(is (get-suffix-neighbors *cdbg-test* "GCGGG") '("CGGGG"))
+(is (get-prefix-neighbors *cdbg-test* "GCGGG") nil)
 
 
 (finalize)

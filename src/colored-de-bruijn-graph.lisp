@@ -124,7 +124,7 @@ otherwise returns NIL."))
 
 (defun get-suffix (seq)
   "Get the suffix of SEQ."
-  (subseq seq 1 (1- (length seq))))
+  (subseq seq 1 (length seq)))
 
 (defun get-prefix (seq)
   "Get the prefix of SEQ."
@@ -137,7 +137,7 @@ otherwise returns NIL."))
       (loop for bp in *nucleotides*
             do (let ((neighbor (funcall concat-fn affix bp)))
                  (when (get-node-colors cdbg neighbor)
-                   (push neighbor neighbor))))
+                   (push neighbor neighbors))))
       neighbors)))
 
 (defun gen-node-colors (index colors-length)
