@@ -9,8 +9,8 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "cl-kleuren")
-                 (:file "colored-de-bruijn-graph"))))
+                ((:file "colored-de-bruijn-graph")
+                 (:file "cl-kleuren"))))
   :description "Finding bubbles using the Colored de Bruijn Graph."
   :long-description
   #.(read-file-string
